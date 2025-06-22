@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job & Scheme Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+    }
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+    nav {
+      background: #0066cc;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .highlight-schemes {
+      background: #fff3cd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #856404;
+      border-bottom: 1px solid #ffeeba;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #004080;
+    }
+    .card a {
+      display: block;
+      color: #0066cc;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-logo.png" alt="Website Logo">
+    <h1>Sarkari & Private Jobs Portal</h1>
+    <p>Latest Jobs, Results, Admit Cards, Schemes & More</p>
+  </header>
+
+  <div class="highlight-schemes">
+    Important: Apply now for PMAY, PM Kisan & other flagship schemes!
+  </div>
+
+  <nav>
+    <a href="#latest-jobs">Latest Jobs</a>
+    <a href="#govt-jobs">Govt Jobs</a>
+    <a href="#private-jobs">Private Jobs</a>
+    <a href="#mncs">MNC Jobs</a>
+    <a href="#schemes">Govt Schemes</a>
+    <a href="#results">Results</a>
+    <a href="#admit-cards">Admit Cards</a>
+    <a href="#answer-keys">Answer Keys</a>
+  </nav>
+
+  <div class="container">
+    <div class="card" id="latest-jobs">
+      <h3>Latest Jobs</h3>
+      <a href="#">Latest Government Openings</a>
+      <a href="#">Private Company Hiring</a>
+    </div>
+
+    <div class="card" id="govt-jobs">
+      <h3>Government Jobs</h3>
+      <a href="https://www.upsc.gov.in/" target="_blank">UPSC</a>
+      <a href="https://ssc.nic.in/" target="_blank">SSC</a>
+      <a href="https://www.indianrailways.gov.in/" target="_blank">Railway</a>
+    </div>
+
+    <div class="card" id="private-jobs">
+      <h3>Private Sector Jobs</h3>
+      <a href="https://www.naukri.com/" target="_blank">Naukri.com</a>
+      <a href="https://www.indeed.com/" target="_blank">Indeed</a>
+    </div>
+
+    <div class="card" id="mncs">
+      <h3>MNC Jobs</h3>
+      <a href="https://careers.google.com/" target="_blank">Google Careers</a>
+      <a href="https://www.microsoft.com/en-us/careers" target="_blank">Microsoft Jobs</a>
+      <a href="https://careers.tcs.com/" target="_blank">TCS Careers</a>
+    </div>
+
+    <div class="card" id="schemes">
+      <h3>Govt Schemes (Yojnas)</h3>
+      <a href="https://pmaymis.gov.in/" target="_blank">PM Awas Yojna</a>
+      <a href="https://pmkisan.gov.in/" target="_blank">PM Kisan</a>
+      <a href="https://www.nrega.nic.in/" target="_blank">MGNREGA</a>
+    </div>
+
+    <div class="card" id="results">
+      <h3>Results</h3>
+      <a href="#">UPSC Result</a>
+      <a href="#">SSC Result</a>
+    </div>
+
+    <div class="card" id="admit-cards">
+      <h3>Admit Cards</h3>
+      <a href="#">UPSC Admit Card</a>
+      <a href="#">SSC Admit Card</a>
+    </div>
+
+    <div class="card" id="answer-keys">
+      <h3>Answer Keys</h3>
+      <a href="#">UPSC Answer Key</a>
+      <a href="#">SSC Answer Key</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Sarkari & Private Jobs Portal | All Rights Reserved
+  </footer>
+
+  <script>
+    console.log("Job & Scheme Portal Loaded");
+  </script>
+
+</body>
+</html>
