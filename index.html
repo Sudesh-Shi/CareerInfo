@@ -4,12 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job & Scheme Portal</title>
- <!-- ✅ This is SEO taglines section: Helps in search engine visibility and ranking -->
+
+  <!-- ✅ This is SEO taglines section: Helps in search engine visibility and ranking -->
   <meta name="title" content="CareerInfo - Sarkari Result, Admit Card, Jobs">
   <meta name="description" content="Sarkari Result, Admit Card, Government & Private Jobs, Yojana Updates, MNC Jobs – भारत की सभी सरकारी और प्राइवेट नौकरियों की जानकारी एक जगह।">
   <meta name="keywords" content="sarkari result, job updates, private job, admit card, rojgar, yojana, mnc jobs">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Sudesh Shi">
+
+  <!-- ✅ Google Analytics (Replace G-XXXXXXX with your real ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // ← Replace this with your real GA ID
+  </script>
 
   <style>
     body {
@@ -17,23 +27,28 @@
       font-family: Arial, sans-serif;
       background-color: #f8f9fa;
     }
+
     header {
       background-color: #004080;
       color: white;
       text-align: center;
       padding: 10px 20px;
     }
+
     header img {
       width: 100px;
       height: auto;
     }
+
     header h1 {
       margin: 10px 0 5px;
     }
+
     header p {
       margin: 0;
       font-size: 16px;
     }
+
     nav {
       background: #0066cc;
       display: flex;
@@ -41,15 +56,18 @@
       justify-content: center;
       padding: 10px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 5px 15px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .highlight-schemes {
       background: #fff3cd;
       padding: 10px;
@@ -58,31 +76,38 @@
       color: #856404;
       border-bottom: 1px solid #ffeeba;
     }
+
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 15px;
       padding: 20px;
     }
+
     .card {
       background: white;
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     .card h3 {
       margin-top: 0;
       color: #004080;
+      font-size: 20px;
     }
+
     .card a {
       display: block;
       color: #0066cc;
       text-decoration: none;
       margin: 8px 0;
     }
+
     .card a:hover {
       text-decoration: underline;
     }
+
     footer {
       background-color: #004080;
       color: white;
@@ -90,9 +115,24 @@
       padding: 15px;
       margin-top: 30px;
     }
-    @media (max-width: 600px) {
+
+    /* ✅ Responsive improvement for small screens */
+    @media (max-width: 768px) {
       nav {
         flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .card a {
+        font-size: 14px;
       }
     }
   </style>
@@ -180,6 +220,5 @@
   <script>
     console.log("Job & Scheme Portal Loaded");
   </script>
-
 </body>
 </html>
